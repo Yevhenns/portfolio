@@ -9,7 +9,9 @@ import { projects } from '@/assets/projects'
   <AppMain>
     <AppContainer>
       <h1>Projects</h1>
-      <AppProjectCard v-for="project in projects" :key="project.id" :project="project" />
+      <div v-if="projects">
+        <AppProjectCard v-for="project in projects" :key="project.id" :project="project" />
+      </div>
     </AppContainer>
   </AppMain>
 </template>
