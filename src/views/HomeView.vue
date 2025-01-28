@@ -39,7 +39,7 @@ import AppContainer from '@/components/AppContainer.vue'
             </a>
           </div>
         </div>
-        <img class="image" src="/public/about/profile-img.webp" alt="profile photo" />
+        <img class="image" src="../assets/images/about/profile-img.webp" alt="profile photo" />
       </div>
     </AppContainer>
   </AppMain>
