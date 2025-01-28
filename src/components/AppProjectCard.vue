@@ -11,7 +11,9 @@ defineProps<{
     <img class="image" :src="project.image" :alt="project.title" width="500" height="100%" />
     <div class="project-info">
       <div class="heading-wrapper">
-        <h2><span class="text-heading">Title: </span>{{ project.title }}</h2>
+        <h2>
+          <span class="text-heading">{{ project.title }}</span>
+        </h2>
         <img :src="project.techImage" width="48" />
       </div>
       <p><span class="text-heading">Description: </span>{{ project.description }}</p>
