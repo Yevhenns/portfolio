@@ -39,18 +39,24 @@ import AppContainer from '@/components/AppContainer.vue'
             </a>
           </div>
           <p>Tech Stack</p>
-          <ul>
+          <div>
             <h3 class="tech-title">Frontend:</h3>
-            <li><p>HTML | CSS | SCSS | Tailwind</p></li>
-            <li><p>JavaScript | TypeScript</p></li>
-            <li><p>React | Next.js | React-Native</p></li>
-            <li><p>Vue.js | Nuxt</p></li>
-            <li><p>Redux-Toolkit | RTK-Query | Zustand | Pinia</p></li>
+            <ul>
+              <li><p>HTML | CSS | SCSS | Tailwind</p></li>
+              <li><p>JavaScript | TypeScript</p></li>
+              <li><p>React | Next.js | React-Native</p></li>
+              <li><p>Vue.js | Nuxt</p></li>
+              <li><p>Redux-Toolkit | RTK-Query | Zustand | Pinia</p></li>
+            </ul>
             <h3 class="tech-title">Backend:</h3>
-            <li><p>Node.js | Express | NestJS</p></li>
+            <ul>
+              <li><p>Node.js | Express | NestJS</p></li>
+            </ul>
             <h3 class="tech-title">Database:</h3>
-            <li><p>MongoDB</p></li>
-          </ul>
+            <ul>
+              <li><p>MongoDB</p></li>
+            </ul>
+          </div>
         </div>
         <img class="image" src="/images/about/profile-img.webp" alt="profile photo" />
       </div>
