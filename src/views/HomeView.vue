@@ -15,7 +15,8 @@ import AppContainer from '@/components/AppContainer.vue'
             Vue.js and React Native. Seeking a position at an innovative company where I can further
             develop my skills and contribute to impactful projects. Based in Dnipro, Ukraine.
           </p>
-          <p>Contact information</p>
+          <hr />
+          <h2>Contact information</h2>
           <div class="links-wrapper">
             <a class="link" href="mailto:gifestum@gmail.com" target="_blank">
               <i class="pi pi-envelope" style="color: slateblue"></i>
@@ -38,7 +39,8 @@ import AppContainer from '@/components/AppContainer.vue'
               <p>Github</p>
             </a>
           </div>
-          <p>Tech Stack</p>
+          <hr />
+          <h2>Tech Stack</h2>
           <div>
             <h3 class="tech-title">Frontend:</h3>
             <ul>
@@ -98,7 +100,6 @@ import AppContainer from '@/components/AppContainer.vue'
 
 .tech-title {
   font-size: 24px;
-  font-weight: 500;
 }
 
 .link {
