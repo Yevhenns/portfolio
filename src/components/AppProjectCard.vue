@@ -8,7 +8,15 @@ defineProps<{
 
 <template>
   <div class="project-card">
-    <img class="image" :src="project.image" :alt="project.title" width="500" height="100%" />
+    <iframe v-if="project.id === 1" class="ifr" src="https://nostrra-pizzza.vercel.app"></iframe>
+    <img
+      v-if="project.id !== 1"
+      class="image"
+      :src="project.image"
+      :alt="project.title"
+      width="500"
+      height="100%"
+    />
     <div class="project-info">
       <div class="heading-wrapper">
         <h2><span class="text-heading">Title: </span>{{ project.title }}</h2>
@@ -47,6 +55,14 @@ defineProps<{
     justify-content: space-between;
   }
 
+  .ifr {
+    min-width: 600px;
+
+    @media (max-width: 1280px) {
+      min-width: 100%;
+      height: 400px;
+    }
+  }
   .project-info {
     display: flex;
     flex-direction: column;
@@ -60,7 +76,7 @@ defineProps<{
   }
 
   .image {
-    width: 500px;
+    width: 600px;
     height: 100%;
 
     @media (max-width: 1280px) {
