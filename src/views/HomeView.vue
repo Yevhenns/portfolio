@@ -40,14 +40,15 @@ import AppContainer from '@/components/AppContainer.vue'
           </div>
           <p>Tech Stack</p>
           <ul>
-            <p>Frontend:</p>
+            <h3 class="tech-title">Frontend:</h3>
             <li><p>HTML | CSS | SCSS | Tailwind</p></li>
             <li><p>JavaScript | TypeScript</p></li>
-            <li><p>React | Next.js | React-Native | Redux-Toolkit | RTK-Query</p></li>
-            <li><p>Vue.js | Nuxt | Pinia</p></li>
-            <p>Backend:</p>
+            <li><p>React | Next.js | React-Native</p></li>
+            <li><p>Vue.js | Nuxt</p></li>
+            <li><p>Redux-Toolkit | RTK-Query | Zustand | Pinia</p></li>
+            <h3 class="tech-title">Backend:</h3>
             <li><p>Node.js | Express | NestJS</p></li>
-            <p>Database:</p>
+            <h3 class="tech-title">Database:</h3>
             <li><p>MongoDB</p></li>
           </ul>
         </div>
@@ -89,6 +90,11 @@ import AppContainer from '@/components/AppContainer.vue'
   }
 }
 
+.tech-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
 .link {
   height: 48px;
   padding: 0 16px;
@@ -96,7 +102,7 @@ import AppContainer from '@/components/AppContainer.vue'
   display: flex;
   align-items: center;
   gap: 10px;
-  border: 1px solid slateblue;
+  border: 2px solid slateblue;
   transition: all 250ms linear;
   color: slateblue;
 
