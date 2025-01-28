@@ -6,7 +6,7 @@ const currentYear = new Date().getFullYear()
 <template>
   <footer class="footer">
     <AppContainer>
-      <p class="footer__copy">&copy; Yevhen Ziuskin, {{ currentYear }}. All rights reserved.</p>
+      <p class="footer__copy">&copy; Yevhen Ziuskin, {{ currentYear }}. Open-source on GitHub.</p>
     </AppContainer>
   </footer>
 </template>
