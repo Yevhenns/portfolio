@@ -11,7 +11,7 @@ import AppHeader from './components/AppHeader.vue'
 
   <AppFooter />
   <a class="download" href="/public/CV.pdf" download="Front-End Developer - Yevhen Ziuskin"
-    >PDF CV</a
+    >Download<br />CV</a
   >
 </template>
 
@@ -21,15 +21,16 @@ import AppHeader from './components/AppHeader.vue'
   right: 60px;
   bottom: 60px;
   background-color: green;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
   color: #ffffff;
   border-radius: 50%;
-  -webkit-animation: loader 5s infinite;
-  animation: loader 5s infinite;
+  -webkit-animation: rotate 4s infinite;
+  animation: rotate 4s infinite;
   font-size: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   transition: all 250ms linear;
@@ -39,18 +40,21 @@ import AppHeader from './components/AppHeader.vue'
   }
 }
 
-@keyframes loader {
-  0% {
-    -webkit-transform: rotate(0deg) scale(1);
-    transform: rotate(0deg) scale(1);
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(0deg);
   }
-  50% {
-    -webkit-transform: rotate(180deg) scale(1.2);
-    transform: rotate(180deg) scale(1.2);
+  to {
+    -moz-transform: rotate(360deg);
   }
-  100% {
-    -webkit-transform: rotate(360deg) scale(1);
-    transform: rotate(360deg) scale(1);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 </style>
