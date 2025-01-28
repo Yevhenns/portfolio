@@ -10,7 +10,10 @@ defineProps<{
   <div class="project-card">
     <img class="image" :src="project.image" :alt="project.title" width="500" height="100%" />
     <div class="project-info">
-      <h2><span class="text-heading">Title: </span>{{ project.title }}</h2>
+      <div class="heading-wrapper">
+        <h2><span class="text-heading">Title: </span>{{ project.title }}</h2>
+        <img :src="project.techImage" width="48" />
+      </div>
       <p><span class="text-heading">Description: </span>{{ project.description }}</p>
       <p><span class="text-heading">Tech Stack: </span>{{ project.techstack }}</p>
       <p><span class="text-heading">Role: </span>{{ project.role }}</p>
@@ -39,10 +42,16 @@ defineProps<{
     flex-direction: column;
   }
 
+  .heading-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .project-info {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
   }
 
   .links-wrapper {

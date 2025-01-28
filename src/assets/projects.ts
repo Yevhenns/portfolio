@@ -2,6 +2,7 @@ export const projects = [
   {
     id: 1,
     image: '/images/projects/nostra.webp',
+    techImage: '/images/technologies/nextjs.svg',
     title: 'Nostra-Pizza',
     description:
       'Full-stack application with Google authentication for ordering food and receiving order confirmations via email. Users can view their order history. Developed in collaboration with a UI/UX designer.',
@@ -13,6 +14,7 @@ export const projects = [
   {
     id: 2,
     image: '/images/projects/nostra-back.webp',
+    techImage: '/images/technologies/nestjs.svg',
     title: 'Nostra Pizza',
     description: 'Back-End application for Nostra Pizza.',
     techstack: 'Nest.js, TypeScript, MongoDB, Swagger, Render.',
@@ -23,6 +25,7 @@ export const projects = [
   {
     id: 3,
     image: '/images/projects/nostra-mobile.webp',
+    techImage: '/images/technologies/react.svg',
     title: 'Nostra-Pizza',
     description: 'Mobile application for Nostra Pizza.',
     techstack: 'React-Native, TypeScript, Redux-Toolkit, React Hook Form, Google Maps, OAuth.',
@@ -33,6 +36,7 @@ export const projects = [
   {
     id: 4,
     image: '/images/projects/novaposhta.webp',
+    techImage: '/images/technologies/vue.svg',
     title: 'Novaposhta tracker',
     description: 'Google Chrome extension for tracking parcels.',
     techstack: 'Vue3, TypeScript, Pinia, Vue-Router, Vercel.',
