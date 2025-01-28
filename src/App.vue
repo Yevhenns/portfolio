@@ -10,7 +10,7 @@ import AppHeader from './components/AppHeader.vue'
   <RouterView />
 
   <AppFooter />
-  <a class="download" href="/public/CV.pdf" download="Front-End Developer - Yevhen Ziuskin"
+  <a class="download" href="/CV.pdf" download="Front-End Developer - Yevhen Ziuskin"
     >Download<br />CV</a
   >
 </template>
