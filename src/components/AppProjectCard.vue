@@ -60,8 +60,9 @@ defineProps<{
   }
 
   .image {
-    width: 500px;
+    width: 600px;
     height: 100%;
+    border-radius: 8px;
 
     @media (max-width: 1280px) {
       width: 100%;
