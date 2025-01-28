@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import AppMain from '@/components/AppMain.vue'
 import AppContainer from '@/components/AppContainer.vue'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  window.scrollTo(0, 0)
+})
 </script>
 
 <template>
