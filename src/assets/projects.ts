@@ -41,7 +41,8 @@ export const projects = [
     image: '/images/projects/novaposhta.webp',
     techImage: '/images/technologies/vue.svg',
     title: 'Novaposhta tracker',
-    description: 'Google Chrome extension for tracking parcels',
+    description:
+      'Google Chrome extension for tracking parcels. Users can search for parcels by tracking number and receive additional information by entering a phone number. The extension also provides a list of tracked parcels, allowing users to update the status of each one. In the settings, users can add their own API key for personalized tracking.',
     techstack: 'Vue3, TypeScript, Pinia, Vue-Router, Vercel',
     role: 'Front-End Developer & Product Creator',
     liveUrl: 'https://np-extension.vercel.app/',
