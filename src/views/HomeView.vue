@@ -2,6 +2,9 @@
 import AppMain from '@/components/AppMain.vue'
 import AppContainer from '@/components/AppContainer.vue'
 import { onMounted } from 'vue'
+import TechStackList from '@/components/about/TechStackList.vue'
+import ContactInformation from '@/components/about/ContactInformation.vue'
+import AboutMe from '@/components/about/AboutMe.vue'
 
 onMounted(() => {
   window.scrollTo(0, 0)
@@ -14,61 +17,12 @@ onMounted(() => {
       <h1>About</h1>
       <div class="info">
         <div class="info-wrapper">
-          <h2>Hello, I'm Yevhen Ziuskin</h2>
-          <p>
-            A Front-End Developer with a passion for building dynamic and responsive web
-            applications. I specialize in using technologies like React, Vue.js, and React-Native,
-            and am proficient in modern frontend tools such as Tailwind, SCSS, Redux-Toolkit,
-            RTK-Query, Zustand, and Pinia. I also have experience working with Node.js, Express, and
-            NestJS for backend development, as well as MongoDB for database management. I'm always
-            eager to learn and grow, and I'm looking for a position where I can contribute to
-            impactful projects, collaborate with talented teams, and continue developing my skills
-            in both frontend and backend technologies. Based in Dnipro, Ukraine.
-          </p>
-          <hr />
+          <AboutMe />
           <h2>Contact information</h2>
-          <div class="links-wrapper">
-            <a class="link" href="mailto:gifestum@gmail.com" target="_blank">
-              <i class="pi pi-envelope" style="color: slateblue"></i>
-              <p>Email</p>
-            </a>
-            <a class="link" href="https://t.me/Yevhen_1990" target="_blank">
-              <i class="pi pi-telegram" style="color: slateblue"></i>
-              <p>Telegram</p>
-            </a>
-            <a
-              class="link"
-              href="https://www.linkedin.com/in/%D1%94%D0%B2%D0%B3%D0%B5%D0%BD-%D0%B7%D1%8E%D1%81%D0%BA%D1%96%D0%BD-031b7b23b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BpQGh7licQY%2Bg%2FUjQXz4vOg%3D%3D"
-              target="_blank"
-            >
-              <i class="pi pi-linkedin" style="color: slateblue"></i>
-              <p>Linkedin</p>
-            </a>
-            <a class="link" href="https://github.com/Yevhenns" target="_blank">
-              <i class="pi pi-github" style="color: slateblue"></i>
-              <p>Github</p>
-            </a>
-          </div>
+          <ContactInformation />
           <hr />
           <h2>Tech Stack</h2>
-          <div>
-            <h3 class="tech-title">Frontend:</h3>
-            <ul>
-              <li><p>HTML | CSS | SCSS | Tailwind</p></li>
-              <li><p>JavaScript | TypeScript</p></li>
-              <li><p>React | Next.js | React-Native</p></li>
-              <li><p>Vue.js | Nuxt</p></li>
-              <li><p>Redux-Toolkit | RTK-Query | Zustand | Pinia</p></li>
-            </ul>
-            <h3 class="tech-title">Backend:</h3>
-            <ul>
-              <li><p>Node.js | Express | NestJS</p></li>
-            </ul>
-            <h3 class="tech-title">Database:</h3>
-            <ul>
-              <li><p>MongoDB</p></li>
-            </ul>
-          </div>
+          <TechStackList />
         </div>
         <img class="image" src="/images/about/profile-img.webp" alt="profile photo" />
       </div>
@@ -93,12 +47,6 @@ onMounted(() => {
   gap: 24px;
 }
 
-.links-wrapper {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
 .image {
   width: 400px;
   height: 100%;
@@ -106,32 +54,6 @@ onMounted(() => {
 
   @media (max-width: 768px) {
     width: 100%;
-  }
-}
-
-.tech-title {
-  font-size: 24px;
-}
-
-.link {
-  height: 48px;
-  padding: 0 16px;
-  border-radius: 24px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border: 2px solid slateblue;
-  transition: all 250ms linear;
-  color: slateblue;
-
-  p {
-    font-weight: 600;
-  }
-
-  &:hover {
-    @media (min-width: 769px) {
-      transform: translateY(-4px);
-    }
   }
 }
 </style>
