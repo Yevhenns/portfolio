@@ -52,8 +52,9 @@ export const projects = [
     image: '/images/projects/nostra-back.webp',
     techImage: '/images/technologies/nestjs.svg',
     title: 'Nostra Pizza',
-    description: 'Back-End application for Nostra Pizza',
-    techstack: 'Nest.js, TypeScript, MongoDB, Swagger, Render',
+    description:
+      "Backend for Nostra Pizza with email order confirmations. Orders are sent to the owner's Gmail account. MongoDB stores products and orders from authenticated users. The backend is documented with Swagger for easy API interaction. It’s optimized for scalability and performance, supporting multiple devices and ensuring smooth operation for both users and administrators.",
+    techstack: 'Nest.js, TypeScript, MongoDB, Nodemailer, Swagger, Render',
     role: 'Back-End Developer & Product Creator',
     liveUrl: 'https://pizza-nest.onrender.com/api',
     githubUrl: 'https://github.com/Yevhenns/pizza-nest.git',
