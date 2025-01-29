@@ -29,7 +29,8 @@ export const projects = [
     image: '/images/projects/nostra-mobile.webp',
     techImage: '/images/technologies/react.svg',
     title: 'Nostra-Pizza',
-    description: 'Mobile application for Nostra Pizza',
+    description:
+      "Mobile application for Nostra Pizza with Google authentication and order confirmations via email. Users can browse products, some with additional options like extra portions of meat. Orders are placed through a form that includes a phone number input mask and Google address input for delivery. Regular users can view their order history, while admins have access to a dedicated admin panel. Orders are sent to the owner's Gmail account. All products and orders from authenticated users are stored in MongoDB. The app is responsive, supports multiple devices, and allows users to save products to their favorites list.",
     techstack: 'React-Native, TypeScript, Redux-Toolkit, React Hook Form, Google Maps, OAuth',
     role: 'Front-End Developer & Product Creator',
     liveUrl: null,
