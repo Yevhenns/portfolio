@@ -5,7 +5,7 @@ export const projects = [
     techImage: '/images/technologies/nextjs.svg',
     title: 'Nostra-Pizza',
     description:
-      'Full-stack application with Google authentication for ordering food and receiving order confirmations via email. Users can view their order history. Developed in collaboration with a UI/UX designer',
+      "A full-stack application for food ordering with Google authentication and order confirmations via email. Users can browse products, with some offering additional options like extra portions of meat. Orders are placed through a form that includes a phone number input mask and a Google address input for delivery. Regular users can view their order history, while admins have access to a dedicated panel. Orders are sent to the owner's Gmail. MongoDB stores all products and orders from authenticated users. The app is responsive, supports various devices, and allows users to save products to their favorites.",
     techstack:
       'Next.js, TypeScript, Redux-Toolkit, React Hook Form, MongoDB, Google Maps, OAuth, Vercel',
     role: 'Full-Stack Developer & Product Creator',
@@ -18,7 +18,7 @@ export const projects = [
     techImage: '/images/technologies/react.svg',
     title: 'Book my event',
     description:
-      'I integrated unit testing, RTK Query with optimistic updates for likes and Google Maps Api. I developed advanced filters for the /all_events page, a form for the /user_profile page and resolved multiple bugs. Additionally, I addressed design inconsistencies, aligning the implementation with Figma prototypes. I also assist other developers on the project',
+      'I integrated RTK Query with optimistic updates for likes, enabling a smoother user experience. I also implemented the Google Maps API and performed unit testing to ensure robust functionality. On the /all_events page, I developed advanced filters, improving event search and categorization. I created a form for the /user_profile page, enhancing user profile management. In addition, I resolved multiple bugs, ensuring the application runs seamlessly. I addressed design inconsistencies, aligning the implementation with Figma prototypes to improve visual consistency. I also provided ongoing support to other developers, assisting with technical challenges and code review.',
     techstack: 'React, TypeScript, Redux-Toolkit, RTK-Query, Vitest, Figma, Jira',
     role: 'Front-End Developer',
     liveUrl: 'https://evently-book.vercel.app',
