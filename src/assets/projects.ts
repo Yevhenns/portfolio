@@ -5,9 +5,9 @@ export const projects = [
     techImage: '/images/technologies/nextjs.svg',
     title: 'Nostra-Pizza',
     description:
-      "A full-stack application for food ordering with Google authentication and order confirmations via email. Users can browse products, with some offering additional options like extra portions of meat. Orders are placed through a form that includes a phone number input mask and a Google address input for delivery. Regular users can view their order history, while admins have access to a dedicated panel. Orders are sent to the owner's Gmail. MongoDB stores all products and orders from authenticated users. The app is responsive, supports various devices, and allows users to save products to their favorites.",
+      "A full-stack application for food ordering with Google authentication and order confirmations via email. Users can browse products, with some offering additional options like extra portions of meat. Orders are placed through a form that includes a phone number input mask and a Google address input for delivery. Regular users can view their order history, while admins have access to a dedicated admin panel to manage products and orders. Orders are sent to the owner's Gmail. MongoDB stores all products and orders from authenticated users. The app is responsive, supports various devices, and allows users to save products to their favorites. Images are stored and managed using Cloudinary.",
     techstack:
-      'Next.js, TypeScript, Redux-Toolkit, React Hook Form, MongoDB, Google Maps, OAuth, Vercel',
+      'Next.js, TypeScript, Redux-Toolkit, React Hook Form, MongoDB, Google Maps, Google OAuth, Vercel, Cloudinary',
     role: 'Full-Stack Developer & Product Creator',
     liveUrl: 'https://nostrra-pizzza.vercel.app',
     githubUrl: 'https://github.com/Yevhenns/pizza-app-router.git',
