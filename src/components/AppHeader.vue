@@ -9,6 +9,7 @@ import AppContainer from './AppContainer.vue'
       <nav class="links-list">
         <RouterLink class="link" to="/">About</RouterLink>
         <RouterLink class="link" to="/projects">Projects</RouterLink>
+        <RouterLink class="link" to="/hobbies">Hobbies</RouterLink>
       </nav>
     </AppContainer>
   </header>
