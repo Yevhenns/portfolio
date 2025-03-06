@@ -11,44 +11,32 @@ import '@splidejs/vue-splide/css'
       <h1>Hobbies</h1>
       <div class="wrapper">
         <h2>Hiking</h2>
-        <Splide :options="{ rewind: true, autoplay: true }" aria-label="My Favorite Images">
+        <Splide :options="{ rewind: true, autoplay: true }" aria-label="My Hiking Images">
           <SplideSlide>
-            <img src="../assets/images/hiking/100_7272.JPG" alt="Sample 1" width="100%" />
+            <img src="/images/hobbies/hiking/1.webp" alt="Sample 1" width="100%" />
           </SplideSlide>
           <SplideSlide>
-            <img src="../assets/images/hiking/2016-07-11.jpg" alt="Sample 2" width="100%" />
+            <img src="/images/hobbies/hiking/2.webp" alt="Sample 2" width="100%" />
           </SplideSlide>
         </Splide>
 
         <h2>Riding</h2>
-        <Splide :options="{ rewind: true, autoplay: true }" aria-label="My Favorite Images">
+        <Splide :options="{ rewind: true, autoplay: true }" aria-label="My Riding Images">
           <SplideSlide>
-            <img
-              src="../assets/images/riding/IMG_20240505_184859.jpg"
-              alt="Sample 1"
-              width="100%"
-            />
+            <img src="/images/hobbies/riding/1.webp" alt="Sample 1" width="100%" />
           </SplideSlide>
           <SplideSlide>
-            <img
-              src="../assets/images/riding/IMG_20240512_114025.jpg"
-              alt="Sample 2"
-              width="100%"
-            />
+            <img src="/images/hobbies/riding/2.webp" alt="Sample 2" width="100%" />
           </SplideSlide>
         </Splide>
 
         <h2>Playing the guitar</h2>
-        <Splide :options="{ rewind: true, autoplay: true }" aria-label="My Favorite Images">
+        <Splide :options="{ rewind: true, autoplay: true }" aria-label="My Music Images">
           <SplideSlide>
-            <img
-              src="../assets/images/music/b2071ebc-9b84-4843-a071-6aa92eb846da.jfif"
-              alt="Sample 1"
-              width="100%"
-            />
+            <img src="/images/hobbies/music/1.webp" alt="Sample 1" width="100%" />
           </SplideSlide>
           <SplideSlide>
-            <img src="../assets/images/music/IMG_20240325_211003.jpg" alt="Sample 2" width="100%" />
+            <img src="/images/hobbies/music/2.webp" alt="Sample 2" width="100%" />
           </SplideSlide>
         </Splide>
       </div>
