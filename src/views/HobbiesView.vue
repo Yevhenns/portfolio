@@ -16,11 +16,11 @@ const hobbies = [
       <h1>Hobbies</h1>
       <div class="wrapper">
         <h2>{{ hobbies[0].title }}</h2>
-        <AppCarousel :images="hobbies[0]" />
+        <AppCarousel :images="hobbies[0]" autoplay />
         <h2>{{ hobbies[1].title }}</h2>
-        <AppCarousel :images="hobbies[1]" />
+        <AppCarousel :images="hobbies[1]" autoplay />
         <h2>{{ hobbies[2].title }}</h2>
-        <AppCarousel :images="hobbies[2]" />
+        <AppCarousel :images="hobbies[2]" autoplay />
       </div>
     </AppContainer>
   </AppMain>

@@ -8,12 +8,13 @@ defineProps<{
     path: string
     images: number[]
   }
+  autoplay: boolean
 }>()
 </script>
 
 <template>
   <Splide
-    :options="{ rewind: true, autoplay: true }"
+    :options="{ rewind: true, autoplay: autoplay }"
     :key="images.title"
     :aria-label="`My ${images.title} Images`"
   >
