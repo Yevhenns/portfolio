@@ -1,8 +1,13 @@
 <script setup lang="ts">
+import AppCarousel from '@/components/AppCarousel.vue'
 import AppContainer from '@/components/AppContainer.vue'
 import AppMain from '@/components/AppMain.vue'
-import { Splide, SplideSlide } from '@splidejs/vue-splide'
-import '@splidejs/vue-splide/css'
+
+const hobbies = [
+  { title: 'Hiking', path: 'images/hobbies/hiking', images: [1, 2] },
+  { title: 'Riding', path: 'images/hobbies/riding', images: [1, 2] },
+  { title: 'Playing the guitar', path: 'images/hobbies/music', images: [1, 2] },
+]
 </script>
 
 <template>
@@ -10,35 +15,12 @@ import '@splidejs/vue-splide/css'
     <AppContainer>
       <h1>Hobbies</h1>
       <div class="wrapper">
-        <h2>Hiking</h2>
-        <Splide :options="{ rewind: true, autoplay: true }" aria-label="My Hiking Images">
-          <SplideSlide>
-            <img src="/images/hobbies/hiking/1.webp" alt="Sample 1" width="100%" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="/images/hobbies/hiking/2.webp" alt="Sample 2" width="100%" />
-          </SplideSlide>
-        </Splide>
-
-        <h2>Riding</h2>
-        <Splide :options="{ rewind: true, autoplay: true }" aria-label="My Riding Images">
-          <SplideSlide>
-            <img src="/images/hobbies/riding/1.webp" alt="Sample 1" width="100%" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="/images/hobbies/riding/2.webp" alt="Sample 2" width="100%" />
-          </SplideSlide>
-        </Splide>
-
-        <h2>Playing the guitar</h2>
-        <Splide :options="{ rewind: true, autoplay: true }" aria-label="My Music Images">
-          <SplideSlide>
-            <img src="/images/hobbies/music/1.webp" alt="Sample 1" width="100%" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src="/images/hobbies/music/2.webp" alt="Sample 2" width="100%" />
-          </SplideSlide>
-        </Splide>
+        <h2>{{ hobbies[0].title }}</h2>
+        <AppCarousel :images="hobbies[0]" />
+        <h2>{{ hobbies[1].title }}</h2>
+        <AppCarousel :images="hobbies[1]" />
+        <h2>{{ hobbies[2].title }}</h2>
+        <AppCarousel :images="hobbies[2]" />
       </div>
     </AppContainer>
   </AppMain>

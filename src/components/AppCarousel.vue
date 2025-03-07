@@ -1,0 +1,24 @@
+<script setup lang="ts">
+import { Splide, SplideSlide } from '@splidejs/vue-splide'
+import '@splidejs/vue-splide/css'
+
+defineProps<{
+  images: {
+    title: string
+    path: string
+    images: number[]
+  }
+}>()
+</script>
+
+<template>
+  <Splide
+    :options="{ rewind: true, autoplay: true }"
+    :key="images.title"
+    :aria-label="`My ${images.title} Images`"
+  >
+    <SplideSlide v-for="img in images.images" :key="img">
+      <img :src="`/${images.path}/${img}.webp`" :alt="`${images.title} ${img}`" width="100%" />
+    </SplideSlide>
+  </Splide>
+</template>
