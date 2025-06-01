@@ -37,7 +37,7 @@ export const projects = [
     githubUrl: 'https://github.com/Yevhenns/bme-calendar.git',
   },
   {
-    id: 3,
+    id: 4,
     image: '/images/projects/nostra-mobile.webp',
     techImage: '/images/technologies/react.svg',
     title: 'Nostra-Pizza',
@@ -49,7 +49,7 @@ export const projects = [
     githubUrl: 'https://github.com/Yevhenns/pizza_mob.git',
   },
   {
-    id: 4,
+    id: 5,
     image: '/images/projects/novaposhta.webp',
     techImage: '/images/technologies/vue.svg',
     title: 'Novaposhta tracker',
@@ -61,7 +61,7 @@ export const projects = [
     githubUrl: 'https://github.com/Yevhenns/np-extension.git',
   },
   {
-    id: 5,
+    id: 6,
     image: '/images/projects/nostra-back.webp',
     techImage: '/images/technologies/nestjs.svg',
     title: 'Nostra Pizza',
