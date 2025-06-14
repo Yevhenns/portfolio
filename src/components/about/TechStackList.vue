@@ -10,11 +10,11 @@
     </ul>
     <h3 class="tech-title">Backend:</h3>
     <ul>
-      <li><p>Node.js | Express | NestJS</p></li>
+      <li><p>Node.js | Express | NestJS | TypeORM</p></li>
     </ul>
     <h3 class="tech-title">Database:</h3>
     <ul>
-      <li><p>MongoDB</p></li>
+      <li><p>MongoDB | PostgreSQL</p></li>
     </ul>
   </div>
 </template>

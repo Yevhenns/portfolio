@@ -1,8 +1,7 @@
 <template>
   <a
     class="download"
-    href="/Front-End Developer - Yevhen Ziuskin.pdf"
-    download="Front-End Developer - Yevhen Ziuskin"
+    href="https://drive.google.com/drive/folders/1Yb2B_Q1V8S58nq7h4zc_0ba4o0dnBc5t?usp=drive_link"
     >Download<br />CV</a
   >
 </template>

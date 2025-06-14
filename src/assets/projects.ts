@@ -30,7 +30,7 @@ export const projects = [
     techImage: '/images/technologies/react.svg',
     title: 'React DayPicker',
     description:
-      'I developed a custom calendar component for this project, which includes a single date picker and a date range picker. The package uses Day.js for date manipulation and pure CSS for styling. The goal was to provide a lightweight, flexible solution tailored to project needs. I ensured proper keyboard accessibility and responsive behavior. The calendar supports custom theming and localization. It was built from scratch and published as a reusable npm package for use in other apps.',
+      'I developed a custom calendar component for the Book My Event project, which includes a single date picker and a date range picker. The package uses Day.js for date manipulation and pure CSS for styling. The goal was to provide a lightweight, flexible solution tailored to project needs. I ensured proper keyboard accessibility and responsive behavior. The calendar supports custom theming and localization. It was built from scratch and published as a reusable npm package for use in other apps.',
     techstack: 'React, TypeScript, CSS Modules, Day.js',
     role: 'Front-End Developer & Package Author',
     liveUrl: 'https://www.npmjs.com/package/bme-calendar',
